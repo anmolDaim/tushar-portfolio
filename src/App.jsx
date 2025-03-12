@@ -2,10 +2,10 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import About from "./Components/About";
 import Blogs from "./Components/Blogs";
 import Footer from "./Components/Footer";
-import Hero from "./components/HeroSection";
-import Reading from "./Components/Reading"; // Import Reading page
+import Reading from "./Components/Reading"; 
 import Experiance from "./Components/Experiance";
 import Worldmap from "./Components/Worldmap";
+import HeroSection from "./components/HeroSection";
 
 function AppContent() {
   const location = useLocation();
@@ -13,7 +13,7 @@ function AppContent() {
 
   return (
     <>
-      {!isReadingPage && <Hero />}
+      {!isReadingPage && <HeroSection />}
       <div className="max-w-7xl mx-auto px-6">
       {!isReadingPage && <Worldmap />}
         {!isReadingPage && <About />}

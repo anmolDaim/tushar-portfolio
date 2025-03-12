@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import About from "./Components/About";
-import Blogs from "./Components/Blogs";
-import Footer from "./Components/Footer";
-import Reading from "./Components/Reading"; 
-import Experiance from "./Components/Experiance";
-import Worldmap from "./Components/Worldmap";
-import HeroSection from "./components/HeroSection";
+import About from "../src/Components/About";
+import Blogs from "../src/Components/Blogs";
+import Footer from "../src/Components/Footer";
+import Reading from "../src/Components/Reading"; 
+import Experiance from "../src/Components/Experiance";
+import Worldmap from "../src/Components/Worldmap";
+import HeroSection from "../src/Components/HeroSection";
 
 function AppContent() {
   const location = useLocation();

@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import React from 'react'
 
 const HeroSection = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+ 
 
   return (
     <section id="home" className='h-screen flex items-center justify-center bg-slate-900'>
@@ -29,7 +29,7 @@ const HeroSection = () => {
             Empowering Financial Success with Expert Accounting
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-400 sm:text-xl">
-            Navigating the complexities of finance with precision and expertise. From bookkeeping to tax planning, we provide tailored accounting solutions to help businesses and individuals achieve financial stability and growth. Let’s make your numbers work for you!
+            Navigating the complexities of finance with precision and expertise. From bookkeeping to tax planning, we provide tailored accounting solutions to help businesses and individuals achieve financial stability and growth. Lets make your numbers work for you!
             </p>
           </div>
         </div>

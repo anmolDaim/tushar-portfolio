@@ -38,7 +38,6 @@ function AppContent() {
             element={
               <>
                 <Blogs />
-                <Footer/>
               </>}
           />
         </Routes>

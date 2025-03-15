@@ -25,7 +25,7 @@ const Footer = () => {
 
         <div className="flex justify-between items-center my-10 mt-24">
           <div>
-            <h4>©2025 by anmoldaim</h4>
+            <h4>©2025 by tusharverma</h4>
           </div>
           <div>
             <div className="flex justify-center items-center space-x-6 ">

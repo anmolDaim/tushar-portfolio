@@ -15,7 +15,7 @@ const Footer = () => {
           <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
             Need guidance on managing your finances? Our experts are here to help with accounting, financial planning, and strategic decision-making. Get in touch today for personalized solutions!        </p>
           <a
-            href="mailto:mangocash123app@gmail.com?subject=Connect%20Now&body=Hi,%20I'm%20interested%20in%20connecting%20with%20you."
+            href="mailto:tusharverma376@gmail.com?subject=Connect%20Now&body=Hi,%20I'm%20interested%20in%20connecting%20with%20you."
             className="bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-30% to-pink-500 to-90% py-3 px-10 m-8 rounded-md"
           >
             Connect Now

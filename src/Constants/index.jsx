@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Send } from 'lucide-react';
+import {Linkedin } from 'lucide-react';
 
 export const navItems = [
   { name: "Home", href: "/" },
@@ -8,19 +8,9 @@ export const navItems = [
 export const socialMedia = [
   {
     id: 1,
-    Icon: Instagram, 
-    url: "https://www.instagram.com/appomoon",
-  },
-  {
-    id: 2,
-    Icon: Youtube, 
-    url: "https://www.youtube.com/@appomoon",
-  },
-  {
-    id: 3,
-    Icon: Send, 
-    url: "https://t.me/appomoon",
-  },
+    Icon: Linkedin, 
+    url: "https://www.linkedin.com/in/tushar-verma-6a976b145",
+  }
 ];
 
 export const blogs = [

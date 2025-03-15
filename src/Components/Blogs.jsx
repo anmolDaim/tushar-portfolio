@@ -27,7 +27,7 @@ const Blogs = () => {
         const firstAdminDoc = adminSnapshot.docs[0]; 
         const email = firstAdminDoc.id;
         setAdminEmail(email);
-        console.log("✅ Admin Email Fetched:", email);
+        //console.log("✅ Admin Email Fetched:", email);
 
         fetchTotalPages(email);
         fetchBlogs(email);
@@ -46,7 +46,7 @@ const Blogs = () => {
       const snapshot = await getDocs(adminDocRef);
       const totalItems = snapshot.size;
       setTotalPages(Math.ceil(totalItems / PAGE_SIZE));
-      console.log("📊 Total Blogs:", totalItems, " | Pages:", Math.ceil(totalItems / PAGE_SIZE));
+      //console.log("📊 Total Blogs:", totalItems, " | Pages:", Math.ceil(totalItems / PAGE_SIZE));
     } catch (error) {
       console.error("❌ Error fetching total pages:", error);
     }
@@ -74,7 +74,7 @@ const Blogs = () => {
       }));
 
       setBlogs(blogsArray);
-      console.log(`📄 Page ${page} Data:`, blogsArray);
+      //console.log(`📄 Page ${page} Data:`, blogsArray);
 
       if (!querySnapshot.empty) {
         setLastDoc(querySnapshot.docs[querySnapshot.docs.length - 1]);
@@ -91,7 +91,7 @@ const Blogs = () => {
     if (currentPage > 1) {
       setCurrentPage((prev) => prev - 1);
       fetchBlogs(adminEmail, currentPage - 1);
-      console.log("⬅️ Going to Previous Page:", currentPage - 1);
+      //console.log("⬅️ Going to Previous Page:", currentPage - 1);
     }
   };
 
@@ -100,7 +100,7 @@ const Blogs = () => {
     if (currentPage < totalPages) {
       setCurrentPage((prev) => prev + 1);
       fetchBlogs(adminEmail, currentPage + 1);
-      console.log("➡️ Going to Next Page:", currentPage + 1);
+      //console.log("➡️ Going to Next Page:", currentPage + 1);
     }
   };
 

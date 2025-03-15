@@ -7,6 +7,7 @@ import Experiance from "../src/Components/Experiance";
 import Worldmap from "../src/Components/Worldmap";
 import HeroSection from "../src/Components/HeroSection";
 import Navbar from "../src/Components/Navbar";
+import LinkedInFeed from "./Components/LinkedInFeed";
 
 function AppContent() {
   const location = useLocation();
@@ -37,7 +38,7 @@ function AppContent() {
             path="/blogs"
             element={
               <>
-                <Blogs />
+                <LinkedInFeed />
               </>}
           />
         </Routes>

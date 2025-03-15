@@ -2,10 +2,11 @@ import { HashRouter as Router, Routes, Route, useLocation } from "react-router-d
 import About from "../src/Components/About";
 import Blogs from "../src/Components/Blogs";
 import Footer from "../src/Components/Footer";
-import Reading from "../src/Components/Reading"; 
+import Reading from "../src/Components/Reading";
 import Experiance from "../src/Components/Experiance";
 import Worldmap from "../src/Components/Worldmap";
 import HeroSection from "../src/Components/HeroSection";
+import Navbar from "../src/Components/Navbar";
 
 function AppContent() {
   const location = useLocation();
@@ -13,17 +14,36 @@ function AppContent() {
 
   return (
     <>
-      {!isReadingPage && <HeroSection />}
+      <Navbar />
       <div className="max-w-7xl mx-auto px-6">
-      {!isReadingPage && <Worldmap />}
-        {!isReadingPage && <About />}
         <Routes>
-          <Route path="/" element={<Blogs />} />
-          <Route path="/reading/:email/:id" element={<Reading />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <Worldmap />
+                <About />
+                <Blogs />
+                <Experiance />
+              </>
+            }
+          />
+          <Route
+            path="/reading/:email/:id"
+            element={<Reading />}
+          />
+          <Route
+            path="/blogs"
+            element={
+              <>
+                <Blogs />
+                <Footer/>
+              </>}
+          />
         </Routes>
-        {!isReadingPage && <Experiance />}
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

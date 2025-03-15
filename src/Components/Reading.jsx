@@ -4,7 +4,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 
 const Reading = () => {
-  const { id, email } = useParams(); // Get id & email from URL
+  const { id, email } = useParams(); 
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

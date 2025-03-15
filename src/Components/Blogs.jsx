@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Blog_Item from "./Blog_Item";
 import { collection, getDocs, query, orderBy, limit, startAfter, where } from "firebase/firestore";
 import { db } from "../firebaseConfig";
+import Pulse from "./Pulse";
 
 const PAGE_SIZE = 6;
 
@@ -109,9 +110,9 @@ const Blogs = () => {
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">Blogs</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-        {blogs.map((blog) => (
+        {loading? (<Pulse/>):(blogs.map((blog) => (
           <Blog_Item email={adminEmail} key={blog.id} id={blog.id} title={blog.title} desc={blog.description} image={blog.imageUrl} timeStamp={blog.timestamp} />
-        ))}
+        )))}
       </div>
 
       {/* ✅ Pagination Buttons */}
@@ -129,7 +130,7 @@ const Blogs = () => {
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages}
-          className="px-6 py-3 bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-30% to-pink-500 to-90% rounded-md disabled:opacity-50"
+          className="px-6 py-3 bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-30% to-pink-500 to-90% rounded-md disabled:opacity-50 "
         >
           Next
         </button>

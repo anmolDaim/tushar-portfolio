@@ -1,6 +1,6 @@
 import {Linkedin } from 'lucide-react';
 
-export const navItems = [
+export const navigation = [
   { name: "Home", href: "/" },
   { name: "Blogs", href: "/blogs" },
 ];
@@ -39,36 +39,36 @@ export const projects = [
     title: "Business Strategy",
     description:
       "Developing financial plans to drive growth and efficiency.",
-    link: "/",
+    link: "#",
   },
   {
     title: "Problem Solving",
     description:
       "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "/",
+    link: "#",
   },
   {
     title: "Analytical Skill",
     description:
       "A multinational technology company that specializes in Internet-related services and products.",
-    link: "/",
+    link: "#",
   },
   {
     title: "Order to Cash",
     description:
       "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "/",
+    link: "#",
   },
   {
     title: "Commerce",
     description:
       "Driving trade and financial operations for economic growth.",
-    link: "/",
+    link: "#",
   },
   {
     title: "Accounting",
     description:
       "Recording and managing financial transactions with accuracy.",
-    link: "/",
+    link: "#",
   },
 ];

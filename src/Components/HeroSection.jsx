@@ -24,11 +24,11 @@ const HeroSection = () => {
 
         {/* Center Content */}
         <div className="h-full w-full flex items-center justify-center">
-          <div className="text-center max-w-3xl">
-            <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+          <div className="text-center max-w-3xl  flex flex-col items-center justify-center">
+            <h1 className="text-5xlfont-semibold tracking-tight text-white sm:text-5xl">
             Empowering Financial Success with Expert Accounting
             </h1>
-            <p className="mt-8 text-lg font-medium text-gray-400 sm:text-xl">
+            <p className="mt-8 max-w-xl text-md font-medium text-gray-400 sm:text-lg">
             Navigating the complexities of finance with precision and expertise. From bookkeeping to tax planning, we provide tailored accounting solutions to help businesses and individuals achieve financial stability and growth. Lets make your numbers work for you!
             </p>
           </div>

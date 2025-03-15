@@ -5,7 +5,7 @@ import { socialMedia } from "../Constants";
 const Footer = () => {
   return (
     <div><section id="contact" className='max-w-7xl mx-auto'>
-      <footer className="mt-20 border-t py-10 border-neutral-700">
+      <footer className="m-10 sm:mx-20 border-t py-10 border-neutral-700">
         <div className="flex justify-center items-center flex-col">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl text-center tracking-wide">
             <span className="text-slate-700 font-bold bg-clip-text">
